@@ -38,7 +38,7 @@ app.put('/update-password', authenticateToken, async (req, res) => {
     user.password = hashedPassword;
     updateUserInDatabase(user);
 
-    res.status(200).json({ message: 'Password updated successfully' });
+    res.status(200).json({ message: 'Password updated' });
 });
 
 function getUserFromDatabase(userId) {
