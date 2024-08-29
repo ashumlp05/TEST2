@@ -49,7 +49,7 @@ function getUserFromDatabase(userId) {
 }
 
 function updateUserInDatabase(user) {
-  console.log("User updated in the database:", user);
+  console.log("User updated in the:", user);
 }
 
 app.listen(port, () => {
